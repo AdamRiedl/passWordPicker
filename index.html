@@ -1,0 +1,54 @@
+<html lang="cz">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        passGenerator
+    </title>
+</head>
+<body>
+<script src="js/passGen.js"></script>
+<h1> PassWord Generator</h1>
+<div class="text">
+    For password Generation select length and click generate each char is randomized and very secure.
+</div>
+
+<div class="passwordBox">
+    <p id="passwordGenText">
+        <br>
+        <button class="copyGenButton"><i class="fa fa-plus"></i></button>
+        <button class="copyGenButton"><i class="fa fa-clone" aria-hidden="true"></i></button>
+        <br>
+        <br>
+    </p>
+</div>
+
+
+<h1>
+    PassWord strongness checker
+</h1>
+<div class="customizeBox">
+<div class="parent">
+    <div class="div1"> Customize your password</div>
+    <div class="div2"> <div class="textInCustom"> Password Length </div> </div>
+    <div class="div3"> <input type="radio"><div class="textInCustom"> Easy to say </div> </div>
+    <div class="div4"> <input type="checkbox"><div class="textInCustom">Uppercase</div> </div>
+    <div class="div5"> <input class="charValue" type="text"></div>
+    <div class="div6"> <input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
+    <div class="div7"><input type="radio"><div class="textInCustom"> Easy to read </div> </div>
+    <div class="div8"><input type="checkbox"><div class="textInCustom">Lowercase</div> </div>
+    <div class="div9"> <input type="radio"><div class="textInCustom">All characters</div> </div>
+    <div class="div10"> <input type="checkbox"><div class="textInCustom">Numbers</div> </div>
+    <div class="div11"> <input type="checkbox"><div class="textInCustom">Symbols</div> </div>
+</div>
+</div>
+
+
+<p class="textFailed" id="passwordLength"></p>
+<p class="textFailed" id="passwordCommon"></p>
+<p class="textFailed" id="passwordSpecialChar"></p>
+<p class="textFailed" id="passwordUpperCase"></p>
+
+
+</body>
+</html>
